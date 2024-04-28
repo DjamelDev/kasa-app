@@ -4,6 +4,7 @@ import Home from "../src/pages/Home/Home";
 import Error from "./components/Error/Error";
 import About from "./pages/About/About";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
