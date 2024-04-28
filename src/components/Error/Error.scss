@@ -1,0 +1,23 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 280px;
+    color: rgba(255, 96, 96, 1);
+    margin-bottom: 60px;
+  }
+  .oups {
+    color: rgba(255, 96, 96, 1);
+    font-size: 30px;
+  }
+
+  .back-home {
+    margin: 100px 0;
+    font-size: 18px;
+    
+    a {
+        color: black;
+    }
+  }
+}
