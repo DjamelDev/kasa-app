@@ -1,0 +1,45 @@
+.apartment-banner {
+  position: relative;
+
+  .navigation-button {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .prev-button {
+    left: 20px;
+  }
+
+  .next-button {
+    right: 20px;
+  }
+
+  .slider {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .index-info {
+    position: absolute; /* Position absolue pour le positionnement précis */
+    color: #fff; /* Couleur du texte */
+    bottom: 20px; /* Espacement du bas de l'image */
+    display: flex; /* Permet à l'élément d'être centré horizontalement */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    left: 50%; /* Place l'élément au centre de l'image */
+    transform: translateX(-50%); /* Recentre l'élément horizontalement */
+    z-index: 1; /* Assure que le texte soit au-dessus de l'image */
+    font-size: 18px; /* Taille du texte */
+  }
+}
