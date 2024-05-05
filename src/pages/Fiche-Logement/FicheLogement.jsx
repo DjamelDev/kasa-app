@@ -5,6 +5,7 @@ import Error from "../../components/Error/Error";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import "./FicheLogement.scss";
 import Tags from "../../components/Tags/Tags";
+import Rating from "../../components/Rating/Rating";
 
 const FicheLogement = () => {
   const { id } = useParams(); // On utilise useParams de react-router-dom pour récupérer le paramètre id de l'URL
@@ -27,6 +28,7 @@ const FicheLogement = () => {
               <p>{logement.host.name}</p>
               <img src={logement.host.picture} alt="" />
             </div>
+            <Rating logement={logement} />
           </div>
         </div>
       </div>
