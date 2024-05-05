@@ -4,6 +4,7 @@ import datas from "../../assets/datas/logements.json";
 import Error from "../../components/Error/Error";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import "./FicheLogement.scss";
+import Tags from "../../components/Tags/Tags";
 
 const FicheLogement = () => {
   const { id } = useParams(); // On utilise useParams de react-router-dom pour récupérer le paramètre id de l'URL
@@ -19,15 +20,13 @@ const FicheLogement = () => {
           <div className="left">
             <h1>{logement.title}</h1>
             <p>{logement.location}</p>
-            
+            <Tags logement={logement} />
           </div>
           <div className="right">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Reiciendis, minima labore! Error at, praesentium dolorum
-            repellendus, in aliquam ipsa accusantium dolor ullam assumenda odio
-            sapiente molestiae expedita quasi quia deleniti rerum impedit vitae
-            fugiat aperiam illum quam aliquid illo. Vel nihil voluptates illum
-            iste impedit recusandae tempora dolorem dignissimos fuga?
+            <div className="host">
+              <p>{logement.host.name}</p>
+              <img src={logement.host.picture} alt="" />
+            </div>
           </div>
         </div>
       </div>

@@ -22,4 +22,28 @@
       font-size: 18px;
     }
   }
+
+  .right {
+
+    margin-top: 30px;
+
+    .host {
+      display: flex;
+      justify-content: flex-end;
+
+      p {
+        color: rgba(255, 96, 96, 1);
+        font-size: 18px;
+        font-weight: 500;
+        width: 70px;
+      }
+
+      img {
+        margin-left: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+        width: 60px;
+      }
+    }
+  }
 }
